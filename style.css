@@ -1,0 +1,139 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0d0d0d; /* fundo preto */
+  color: #f0f0f0;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #00bfa6; /* azul Tiffany */
+  padding: 1.5rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #ffffff;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Menu */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #0fffe3; /* azul tiffany mais claro no hover */
+  text-decoration: underline;
+}
+
+/* Seções */
+main {
+  padding: 2rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+/* Galeria de fotos com fade-in */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.fade-in img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 191, 166, 0.5);
+}
+
+.overlay {
+  text-align: center;
+  margin-top: 0.5rem;
+  color: #00bfa6;
+  font-style: italic;
+}
+
+/* Rodapé */
+footer {
+  background-color: #1a1a1a;
+  color: #00bfa6;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+/* Efeitos */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .fade-in img {
+    max-width: 100%;
+  }
+}
+
+
+footer {
+  background-color: #1a1a1a; /* fundo escuro */
+  color: #00bfa6; /* azul Tiffany */
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
