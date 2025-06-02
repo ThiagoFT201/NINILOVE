@@ -139,23 +139,27 @@ footer {
 }
 
 
-.reveal-img {/*primeira foto do "fotos"*/
-  opacity: 0;
-  transform: scale(0.95);
-  animation: revealFadeIn 3s ease forwards;
+/* Estilo da moldura com efeito de revelação */
+.reveal-img {
+  opacity: 0; /* começa invisível */
+  transform: scale(0.95); /* ligeiramente menor para dar efeito de zoom leve */
+  animation: revealFadeIn 3s ease forwards; /* animação que dura 3 segundos */
+  
+  /* Moldura e estilo visual */
   max-width: 90%;
   margin: 2rem auto;
   padding: 10px;
   border: 4px solid #81d8d0; /* azul Tiffany */
   border-radius: 12px;
-  background-color: #111; /* fundo dentro da moldura */
+  background-color: #111; /* fundo interno escuro */
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 0 12px #81d8d088;
+  box-shadow: 0 0 12px #81d8d088; /* sombra leve azul */
 }
 
-.reveal-img {/*primeira foto do "fotos"*/
+/* Garante que a imagem não fique gigante */
+.reveal-img img {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
