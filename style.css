@@ -151,7 +151,7 @@ footer {
   padding: 10px;
   border: 4px solid #81d8d0; /* azul Tiffany */
   border-radius: 12px;
-  background-color: #111; /* fundo interno escuro */
+  /*background-color: #111; /* fundo interno escuro */
   display: flex;
   justify-content: center;
   align-items: center;
