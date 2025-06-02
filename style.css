@@ -140,7 +140,7 @@ footer {
 
 
 .reveal-img {/*primeira foto do "fotos"*/
-  opacity: 80;
+  opacity: 0;
   transform: scale(0.95);
   animation: revealFadeIn 3s ease forwards;
   max-width: 90%;
@@ -155,7 +155,7 @@ footer {
   box-shadow: 0 0 12px #81d8d088;
 }
 
-.reveal-img img {/*primeira foto do "fotos"*/
+.reveal-img {/*primeira foto do "fotos"*/
   max-width: 100%;
   height: auto;
   border-radius: 8px;
