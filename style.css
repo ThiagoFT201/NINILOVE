@@ -137,3 +137,21 @@ footer {
   bottom: 0;
   left: 0;
 }
+
+
+.reveal-img {
+  opacity: 0;
+  transform: scale(0.95);
+  animation: revealFadeIn 3s ease forwards;
+}
+
+@keyframes revealFadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
